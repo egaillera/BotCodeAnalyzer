@@ -1,5 +1,8 @@
 # BotCodeAnalyzer
-Simple Python script that receives as an argument a file with the source code of a Microsoft Botframework Bog dialog, written in TypeScript or C#, and generates an image with the flow of such dialog
+Simple Python script that receives as an argument a file with the source code of a Microsoft Botframework Bog dialog, written in TypeScript or C#, and generates an image with the flow of such dialog. It uses two LLM models work in a chain: first one to analyze the code and to provide a description of the flow dialog; and a second one that takes the description, and write mermaid code to draw the diagram with the flow.
+
+The script expects to find the OPENAI_API configuration parameters as environment variables
+
 ```
 usage: gen_diag.py [-h] [-f FILE] [-l {Typescript,C#}]
 
