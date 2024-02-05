@@ -1,5 +1,5 @@
 # BotCodeAnalyzer
-Simple Python script that receives as an argument a file with the source code of a Microsoft Botframework Bog dialog, written in TypeScript or C#, and generates an image with the flow of such dialog. It uses two LLM models work in a chain: first one to analyze the code and to provide a description of the flow dialog; and a second one that takes the description, and write mermaid code to draw the diagram with the flow.
+Simple Python script that receives as an argument a file with the source code of a Microsoft Bot Framework Bot dialog, written in TypeScript or C#, and generates an image with the flow of such dialog. It uses two LLM models work in a chain: first one to analyze the code and to provide a description of the flow dialog; and a second one that takes the description, and write mermaid code to draw the diagram with the flow.
 
 The script expects to find the OPENAI_API configuration parameters as environment variables, and the _mmdc_ executable (to generate the image through a mmd file) installed in the system.
 
